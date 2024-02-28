@@ -40,3 +40,18 @@ public class Dijkstra {
     }
 }
 
+// Used to find the shortest path of a non-negative weighted, directed or undirected, 
+//  cyclic or acyclic, connected graph
+
+// Dijkstra uses BFS
+
+// Time Complexity
+// The time complexity for this algorithm can be written as O(E logE), where E is the number of edges. 
+// Recall that in the worst case, each vertex is connected to the other, i.e. V^2 
+
+// In the worst case, we might have every single edge inside of our heap. 
+// Since insertion and removal from a heap is logn, this gives us a total of O(E logE).
+
+
+
+

@@ -64,6 +64,15 @@ public class Prim {
 // The space complexity is O(E) since our hashset grows linearly to the number of edges our graph has.
 
 // You can start at any single vertex in the graph (which is a benefit)
+// From the start add all the starter vertex's neighbors
+// while there are still vertices in the heap, get the lowest weighted edge from a the set of 
+//  unvisited neighbors.
+// The edge you pick should only be for unvisited nodes.
+// Once you pick a new edge to a new vertex, set that vertex as visited.
+// For each neighbor from that picked node, add only the unvisited neighbors to the minHeap
 
-
-
+// Utilize a HashSet or visited array to keep track of visited nodes
+// Utilize a HashMap to create an adjacency matrix of connected nodes from a current node and 
+//  the weight to neighbor 
+// Utilize a MinHeap/PriorityQueue to keep track of the minimum weight/cost 
+// Utilize a List to keep track of the MST

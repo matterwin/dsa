@@ -45,3 +45,12 @@ public class Kruskal {
 //
 // The memory complexity will be 
 // O(E), where E is the number of edges.
+
+// Greedy Algorithm learned in Math Graph Theory
+// Use a minHeap to add all the weights of the set of edges between 2 vertices
+// Use a UnionFind to keep track of what vertex is already apart of our MST component
+// While how size of List MST is less than the number of nodes, get the minimal weighted
+//  edge and if it is already not apart of our component via unionFind.union, then add 
+//  it to our mst list; else skip the visited node for its already apart of the MST 
+//
+

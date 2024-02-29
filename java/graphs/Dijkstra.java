@@ -52,6 +52,17 @@ public class Dijkstra {
 // In the worst case, we might have every single edge inside of our heap. 
 // Since insertion and removal from a heap is logn, this gives us a total of O(E logE).
 
+// HashMap for adj matrix
+// Initialize it for each node gets a set of neighbors and their weights
+// Use a MinHeap/PriorityQueue to keep track of the minimal weights wrt to the path weight
+// HashMap for our MST
+// Start at the starter node
+// While our minHeap is not empty, get the smallest weight and if the destination node 
+//  has already been visited, then skip it.
+//  Else, add it to hashMap, and for each neighbor of the new destination node, add its weight
+//  plus the weight of the current path to the minHeap for the neighbors new weight, Since
+//  that is how Dijkstra's algorithm works if you remember
+//
 
 
 

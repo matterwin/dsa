@@ -90,9 +90,38 @@ class AllPairShortestPath {
 
 // Contributed by Aakash Hasija
 
+// The Floyd-Warshall algorithm, named after its creators Robert Floyd and Stephen Warshall, is a fundamental algorithm in computer science 
+// and graph theory. 
+// It is used to find the shortest paths between all pairs of nodes in a weighted graph. 
+// This algorithm is highly efficient and can handle graphs with both positive and negative edge weights, 
+// making it a versatile tool for solving a wide range of network and connectivity problems.
+
 // The Floyd Warshall Algorithm is an all pair shortest path algorithm unlike Dijkstra and Bellman Ford 
 // which are single source shortest path algorithms. 
 // This algorithm works for both the directed and undirected weighted graphs. 
 // But, it does not work for the graphs with negative cycles (where the sum of the edges in a cycle is negative). 
+
 // It follows Dynamic Programming approach to check every possible path going via every possible node in order 
 // to calculate shortest distance between every pair of nodes.
+
+// Use floydWarshall's algorithm for finding the shorest path for every pair of vertices
+
+
+
+// Floyd-Warshall Algorithm:
+
+// Pros:
+
+// Efficient: Finds shortest paths between all pairs of nodes in a graph.
+// Versatile: Handles graphs with both positive and negative edge weights.
+// All-Pairs: Unlike Dijkstra and Bellman-Ford, it computes all pair shortest paths.
+
+
+// Cons:
+//
+// Complexity: Time complexity is cubic, Θ(V^3), which can be inefficient for large graphs.
+// Negative Cycles: Doesn't work for graphs with negative cycles, limiting its applicability.
+
+
+// remember the forumla A^kth[i,j] = min{A^(k-1)th[i,j], A^(k-1)[i,k] + A^(k-1)[k,j]}
+// the ^k part just means the kth matrix i.e. the shorest path matrix for vertex k

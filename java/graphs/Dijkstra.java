@@ -65,4 +65,21 @@ public class Dijkstra {
 //
 
 
+// Dijkstra's Algorithm:
 
+// Pros:
+
+// Efficiency: Efficiently finds the shortest path from a single source to all other vertices in non-negative weighted graphs.
+// Simplicity: Conceptually simpler compared to some other shortest path algorithms like Bellman-Ford.
+// Optimality: Provides optimal solutions for non-negative edge weights, ensuring the shortest path.
+// Priority Queue Optimization: Can be optimized with a priority queue data structure for faster execution.
+// Applications: Widely used in various applications such as network routing protocols and GPS navigation systems.
+
+
+// Cons:
+
+// Limited Applicability: Does not handle negative weight edges, thus not suitable for graphs with negative weights.
+// Single Source: Computes shortest paths from only one source vertex, unlike algorithms like Floyd-Warshall which compute all pairs.
+// Time Complexity: While efficient for single-source shortest paths, its time complexity increases when applied to graphs with many vertices and edges.
+// Greedy Nature: Relies on the assumption that each shortest path examined is indeed the shortest, which may not hold in some cases, leading to suboptimal solutions.
+// Shortcomings in Dense Graphs: In dense graphs, Dijkstra's algorithm can be less efficient due to the overhead of maintaining the priority queue.

@@ -13,6 +13,12 @@ int main() {
     myUnorderedMultiMap.insert(std::make_pair("grape", 30));
     myUnorderedMultiMap.insert(std::make_pair("banana", 25)); // Duplicate keys are allowed in unordered_multimap
 
+    // Access elements using range-based for loop (C++11)
+    std::cout << "Elements using range-based for loop:" << std::endl;
+    for (auto& [key, value] : myUnorderedMultiMap) {
+        std::cout << key << ": " << value << std::endl;
+    }
+
     // Access elements using iterators
     std::cout << "Elements using iterators:" << std::endl;
     for (auto it = myUnorderedMultiMap.begin(); it != myUnorderedMultiMap.end(); ++it) {

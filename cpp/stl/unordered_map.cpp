@@ -12,6 +12,12 @@ int main() {
     myHashMap["grape"] = 30;
     myHashMap["banana"] = 25; // Overwrites the previous value of "banana"
 
+    // Access elements using range-based for loop (C++11)
+    std::cout << "Elements using range-based for loop:" << std::endl;
+    for (auto& [key, value] : myHashMap) {
+        std::cout << key << ": " << value << std::endl;
+    }
+
     // Access elements using iterators
     std::cout << "Elements using iterators:" << std::endl;
     for (auto it = myHashMap.begin(); it != myHashMap.end(); ++it) {
